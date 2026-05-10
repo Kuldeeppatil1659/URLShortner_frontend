@@ -1,71 +1,100 @@
 import React from "react";
+import { FiMail, FiGithub, FiHeart } from "react-icons/fi";
+import { FaWhatsapp, FaPortrait } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <>
-      <footer className="footer bg-neutral text-neutral-content items-center p-4">
-        <aside className="grid-flow-col items-center">
-          <svg
-            width="36"
-            height="36"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            fillRule="evenodd"
-            clipRule="evenodd"
-            className="fill-current"
-          >
-            <path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
-          </svg>
-          <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
-        </aside>
-        <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-          {/* Portfolio Icon */}
-          <a
-            href="https://atharav-uttekar.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              className="fill-current"
+    <footer className="relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 border-t border-gray-700">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+          {/* Brand Section */}
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center shadow-lg">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                fillRule="evenodd"
+                clipRule="evenodd"
+                className="fill-white"
+              >
+                <path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
+              </svg>
+            </div>
+            <p className="text-sm text-gray-400">
+              © {new Date().getFullYear()} Linklyfy. All rights reserved.
+            </p>
+          </div>
+
+          {/* Social Links */}
+          <div className="flex items-center gap-3">
+            {/* Portfolio Link */}
+            <a
+              href="https://kuldeeps-portfolio.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative p-2 rounded-lg bg-gray-700/50 hover:bg-gray-700 transition-all duration-200"
+              aria-label="Portfolio"
             >
-              <path d="M12 0l10 6v12l-10 6-10-6v-12l10-6zm0 2.197l-8.344 5.004v9.601l8.344 5.005 8.344-5.005v-9.601l-8.344-5.004zm-4.125 5.722h8.25l-.75 8.25-6.75 1.5-6.75-1.5-.75-8.25z" />
-            </svg>
-          </a>
-          {/* Email Icon */}
-          <a href="mailto:atharavuttekar@gmail.com">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              className="fill-current"
+              <FaPortrait className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
+              <span className="absolute -top-10 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-gray-800 text-xs text-white rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                Portfolio
+              </span>
+            </a>
+
+            {/* Email Link */}
+            <a
+              href="mailto:kuldeeppatil1659@gmail.com"
+              className="group relative p-2 rounded-lg bg-gray-700/50 hover:bg-gray-700 transition-all duration-200"
+              aria-label="Email"
             >
-              <path d="M20 4h-16c-1.105 0-2 .895-2 2v12c0 1.105.895 2 2 2h16c1.105 0 2-.895 2-2v-12c0-1.105-.895-2-2-2zm0 2v.511l-8 5.039-8-5.039v-.511h16zm-16 12v-9.013l7.533 4.73c.305.191.634.283.967.283s.662-.092.967-.283l7.533-4.73v9.013h-16z" />
-            </svg>
-          </a>
-          {/* WhatsApp Icon */}
-          <a
-            href="https://wa.me/8626042630/?text=Hi%20I%20have%20a%20question%20regarding%20your%20project."
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              className="fill-current"
+              <FiMail className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
+              <span className="absolute -top-10 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-gray-800 text-xs text-white rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                Email
+              </span>
+            </a>
+
+            {/* WhatsApp Link */}
+            <a
+              href="https://wa.me/8275561659/?text=Hi%20I%20have%20a%20question%20regarding%20your%20project."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative p-2 rounded-lg bg-gray-700/50 hover:bg-green-600/20 transition-all duration-200"
+              aria-label="WhatsApp"
             >
-              <path d="M12 0c-6.627 0-12 5.373-12 12 0 2.09.535 4.078 1.545 5.851l-1.604 5.926 6.042-1.578c1.725.961 3.67 1.495 5.636 1.495 6.627 0 12-5.373 12-12s-5.373-12-12-12zm0 21.801c-1.795 0-3.551-.485-5.084-1.402l-.365-.215-3.666.957.975-3.617-.236-.377c-.945-1.505-1.45-3.231-1.45-5.048 0-5.522 4.478-10 10-10s10 4.478 10 10-4.478 10-10 10zm4.285-7.767c-.237-.119-1.408-.691-1.625-.771-.217-.081-.375-.119-.533.119-.158.237-.61.771-.748.929-.138.158-.277.178-.514.06-.237-.119-1.002-.369-1.906-1.177-.704-.625-1.179-1.397-1.317-1.635-.138-.237-.015-.365.104-.484.107-.106.237-.277.355-.415.119-.138.158-.237.237-.395.08-.158.04-.297-.02-.415-.059-.119-.533-1.282-.731-1.756-.193-.463-.39-.399-.533-.406-.138-.007-.297-.007-.455-.007-.158 0-.415.059-.633.297-.217.237-.83.811-.83 1.978s.849 2.292.968 2.451c.119.158 1.676 2.555 4.064 3.584.568.245 1.011.39 1.356.5.57.181 1.089.156 1.496.095.456-.069 1.408-.571 1.608-1.122.198-.553.198-1.027.138-1.122-.059-.095-.217-.158-.455-.277z" />
-            </svg>
-          </a>
-        </nav>
-      </footer>
-    </>
+              <FaWhatsapp className="w-5 h-5 text-gray-400 group-hover:text-green-500 transition-colors" />
+              <span className="absolute -top-10 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-gray-800 text-xs text-white rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                WhatsApp
+              </span>
+            </a>
+
+            {/* GitHub Link (Added for completeness) */}
+            <a
+              href="https://github.com/Kuldeeppatil1659"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative p-2 rounded-lg bg-gray-700/50 hover:bg-gray-700 transition-all duration-200"
+              aria-label="GitHub"
+            >
+              <FiGithub className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
+              <span className="absolute -top-10 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-gray-800 text-xs text-white rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                GitHub
+              </span>
+            </a>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="mt-6 pt-6 border-t border-gray-800">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-2 text-xs text-gray-500">
+            <span>Built with</span>
+            <FiHeart className="text-red-500 inline animate-pulse" />
+            <span>using React & Tailwind CSS</span>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 };
 

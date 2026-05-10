@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "../Functionality/Link";
-import { FiLink, FiTrendingUp, FiShield, FiZap } from "react-icons/fi";
+import { FiLink, FiTrendingUp,  FiZap } from "react-icons/fi";
 import { AiOutlineQrcode } from "react-icons/ai";
 import { MdAnalytics } from "react-icons/md";
 
