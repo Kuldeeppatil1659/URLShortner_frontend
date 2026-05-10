@@ -49,7 +49,7 @@ const QrCode = () => {
     }
 
     // URL validation
-    const urlPattern = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
+    const urlPattern = /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([/\w .-]*)*\/?$/;
     if (!urlPattern.test(link)) {
       toast.error("Please enter a valid URL (e.g., https://example.com)");
       return;
