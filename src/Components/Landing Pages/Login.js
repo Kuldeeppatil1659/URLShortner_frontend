@@ -224,7 +224,7 @@ function Login() {
                       {/* Sign Up Link */}
                       <div className="text-center pt-4">
                         <p className="text-gray-300">
-                          New to Linklyfy?{" "}
+                          New to ShortyURL?{" "}
                           <Link
                             to="/register"
                             className="text-purple-400 hover:text-purple-300 font-semibold hover:underline transition-colors"
