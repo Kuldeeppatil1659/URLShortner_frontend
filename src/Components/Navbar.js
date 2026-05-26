@@ -29,7 +29,7 @@ const Navbar = () => {
               className="flex items-center gap-2 text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
             >
               <span className="text-2xl">✨</span>
-              Linklyfy
+              ShortyURL
             </button>
           ) : (
             <div className="flex items-center gap-3">
