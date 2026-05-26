@@ -23,7 +23,7 @@ const Footer = () => {
               </svg>
             </div>
             <p className="text-sm text-gray-400">
-              © {new Date().getFullYear()} Linklyfy. All rights reserved.
+              © {new Date().getFullYear()} ShortyURL. All rights reserved.
             </p>
           </div>
 
